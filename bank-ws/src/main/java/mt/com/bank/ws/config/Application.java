@@ -1,0 +1,1 @@
+package mt.com.bank.ws.config;import org.springframework.context.annotation.ComponentScan;import org.springframework.context.annotation.Configuration;@Configuration@ComponentScan(basePackages = "mt.com.bank")public class Application{}
