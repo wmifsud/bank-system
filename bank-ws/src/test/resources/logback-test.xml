@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <configuration scan="false" debug="false">
-    <jmxConfigurator/>
-    <appender name="bank" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>/logs/bank/bank.log</File>
-        <encoder>
-            <pattern>%level: %date [%thread] [%file] %msg%n</pattern>
-        </encoder>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>/logs/bank/bank.%d{yyyy-MM-dd}.log</fileNamePattern>
-        </rollingPolicy>
-    </appender>
     <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>%d [%t] %p - %m %n</pattern>
