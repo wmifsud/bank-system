@@ -7,8 +7,6 @@
         </encoder>
     </appender>
 
-    <logger name="mt.com.bank" level="INFO">
-        <appender-ref ref="bank"/>
-    </logger>
+    <logger name="mt.com.bank" level="INFO"/>
 
 </configuration>
