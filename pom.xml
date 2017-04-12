@@ -14,7 +14,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <jdk.version>1.7</jdk.version>
+        <jdk.version>1.8</jdk.version>
         <joda.time.version>2.8.2</joda.time.version>
         <slf4j.api.version>1.7.12</slf4j.api.version>
         <spring.version>4.2.2.RELEASE</spring.version>
