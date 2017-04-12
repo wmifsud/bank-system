@@ -1,5 +1,21 @@
 version: '3'
-services:   
+services:
+
+  tomcat:
+    build: bank-tomcat
+    image: bank-tomcat
+    ports:
+     - "8080:8080"
+     - "8000:8000"
+#  depends_on:
+#     - "postgres"
+    environment:
+      JPDA_ADDRESS: 8000
+      JPDA_TRANSPORT: dt_socket
+      JPDA_SUSPEND: "y"
+#  command:
+#    catalina.sh jpda run
+
   postgres:
     build: bank-postgres
     image: bank-postgres
