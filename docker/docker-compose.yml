@@ -21,7 +21,7 @@ services:
      - ./bank-tomcat/setenv.sh:/usr/local/tomcat/bin/setenv.sh
      - ./bank-tomcat/application.properties:/usr/local/tomcat/conf/application.properties
     command:
-      catalina.sh jpda run
+      catalina.sh run
 
   postgres:
     build: bank-postgres
