@@ -4,8 +4,8 @@ Application Installation - Docker.
 
 Run docker-compose up -d under bank-system/docker directory.
 
-Testing.
-1. Run mvn clean install or simply run tests under BankControllerTest class.
+Testing (to be carried out after docker containers are up and running).
+1. Run mvn clean test or simply run tests under BankControllerTest class.
 2. Please import postman bank.json.postman_collection in order to access additional tests and test integrity with the system.
 
 Application has the following methods:
