@@ -2,7 +2,7 @@
 
 Application Installation - Docker.
 
-Run docker-compose up -d under bank-system/docker directory.
+Run "docker-compose up -d" under bank-system/docker directory.
 
 Testing (to be carried out after docker containers are up and running).
 1. Run mvn clean test or simply run tests under BankControllerTest class.
