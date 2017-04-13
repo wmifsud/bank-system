@@ -7,18 +7,21 @@ services:
     ports:
      - "8080:8080"
      - "8000:8000"
-    depends_on:
-     - "postgres"
     environment:
       JPDA_ADDRESS: 8000
       JPDA_TRANSPORT: dt_socket
       JPDA_SUSPEND: "y"
     depends_on:
      - postgres
+    links:
+     - postgres
     volumes:
      - ../bank-ws/target/bank-ws.war:/usr/local/tomcat/webapps/bank-ws.war
-#    command:
-#      catalina.sh jpda run
+     - ./bank-tomcat/postgresql-42.0.0.jar:/usr/local/tomcat/lib/postgresql-42.0.0.jar
+     - ./bank-tomcat/setenv.sh:/usr/local/tomcat/bin/setenv.sh
+     - ./bank-tomcat/application.properties:/usr/local/tomcat/conf/application.properties
+    command:
+      catalina.sh jpda run
 
   postgres:
     build: bank-postgres

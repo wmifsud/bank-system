@@ -1,0 +1,1 @@
+JAVA_OPTS="$JAVA_OPTS -Dpath=/usr/local/tomcat/conf/application.properties"
